@@ -1,0 +1,28 @@
+# 根CMakeLists.txt
+cmake_minimum_required(VERSION 3.15)
+project(wlan_dev C)
+# 设置输出目录
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+# 方法1：按模块收集
+file(GLOB ARCH_SRC "${CMAKE_CURRENT_SOURCE_DIR}/arch/src/*.c")
+message("ARCH_SRC = ${ARCH_SRC}")
+file(GLOB LAYER1_SRC "${CMAKE_CURRENT_SOURCE_DIR}/layer1/src/*.c")
+message("LAYER1_SRC = ${LAYER1_SRC}")
+file(GLOB LAYER2_SRC "${CMAKE_CURRENT_SOURCE_DIR}/layer2/src/*.c")
+message("LAYER2_SRC = ${LAYER2_SRC}")
+file(GLOB LAYER3_SRC "${CMAKE_CURRENT_SOURCE_DIR}/layer3/src/*.c")
+message("LAYER3_SRC = ${LAYER3_SRC}")
+file(GLOB COMMON_SRC = "${CMAKE_CURRENT_SOURCE_DIR}/common/src/*.c")
+message("COMMON_SRC  ${COMMON_SRC}")
+# 主可执行文件
+add_executable(wlan_dev ${ARCH_SRC} ${LAYER1_SRC} ${LAYER2_SRC} ${LAYER3_SRC} ${COMMON_SRC})
+# 添加头文件搜索路径
+target_include_directories(wlan_dev PRIVATE
+    ../public_interfac/include
+    arch/include
+    common/include
+    layer1/include
+    layer2/include
+    layer3/include
+)
+
