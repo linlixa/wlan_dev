@@ -1,19 +1,104 @@
 # 根CMakeLists.txt
 cmake_minimum_required(VERSION 3.15)
-project(wlan_dev C)
+project(wlan_dev
+        VERSION 1.0.0
+        DESCRIPTION "study cmake project"
+        LANGUAGES C)
+
+message("PROJECT_NAME = ${PROJECT_NAME}")
+message("PROJECT_VERSION ${PROJECT_VERSION}")
+message("PROJECT_DESCRIPTION ${PROJECT_DESCRIPTION}")
+
+# 设置项目基本变量
+set(PROJECT_NAME ${PROJECT_NAME})
+set(PROJECT_VERSION ${PROJECT_VERSION})
+set(PROJECT_DESCRIPTION ${PROJECT_DESCRIPTION})
+
+# 设置C标准
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS OFF)
+
+# 设置构建类型（如果未指定）
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE "Release" CACHE STRING
+            "Build type (Debug, Release, RelWithDebInfo, MinSizeRel)" FORCE)
+endif()
+
+# 设置输出目录
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# 设置安装前缀（如果未指定）
+if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+    set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install" CACHE PATH "Install prefix" FORCE)
+endif()
+
+# 包含CMake辅助模块
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+#include(Utilities)
+
+
+# 配置选项
+option(BUILD_SHARED_LIBS "Build shared libraries instead of static" OFF)
+option(BUILD_TESTS "Build tests" ON)
+option(BUILD_EXAMPLES "Build examples" ON)
+option(ENABLE_ASAN "Enable AddressSanitizer" OFF)
+option(ENABLE_UBSAN "Enable UndefinedBehaviorSanitizer" OFF)
+option(ENABLE_COVERAGE "Enable code coverage" OFF)
+
+
+
+# 编译器检查
+if(CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
+    set(IS_GNU_COMPATIBLE ON)
+endif()
+
+# 编译器警告
+if(IS_GNU_COMPATIBLE)
+    set(COMMON_WARNINGS
+            -Wall
+            -Wextra
+            -Wpedantic
+            -Wshadow
+            -Wformat=2
+            -Wconversion
+            -Wsign-conversion
+            -Wnull-dereference
+    )
+
+    if(CMAKE_C_COMPILER_ID STREQUAL "Clang")
+        list(APPEND COMMON_WARNINGS
+                -Weverything
+                -Wno-padded
+                -Wno-covered-switch-default
+        )
+    endif()
+
+endif()
+
+
+
 # 设置输出目录
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 # 方法1：按模块收集
-file(GLOB ARCH_SRC "${CMAKE_CURRENT_SOURCE_DIR}/arch/src/*.c")
-message("ARCH_SRC = ${ARCH_SRC}")
-file(GLOB LAYER1_SRC "${CMAKE_CURRENT_SOURCE_DIR}/layer1/src/*.c")
-message("LAYER1_SRC = ${LAYER1_SRC}")
-file(GLOB LAYER2_SRC "${CMAKE_CURRENT_SOURCE_DIR}/layer2/src/*.c")
-message("LAYER2_SRC = ${LAYER2_SRC}")
-file(GLOB LAYER3_SRC "${CMAKE_CURRENT_SOURCE_DIR}/layer3/src/*.c")
-message("LAYER3_SRC = ${LAYER3_SRC}")
-file(GLOB COMMON_SRC = "${CMAKE_CURRENT_SOURCE_DIR}/common/src/*.c")
-message("COMMON_SRC  ${COMMON_SRC}")
+set(isAutoCheckFileModfy OFF) #通过这个变量为ON可以让cmake每次编译的时候都会执行cmake，可以确保文件的增加和删除以及名字修改都被cmake发现。
+if (isAutoCheckFileModfy)
+    file(GLOB ARCH_SRC   CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/arch/src/*.c")
+    file(GLOB LAYER1_SRC CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/layer1/src/*.c")
+    file(GLOB LAYER2_SRC CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/layer2/src/*.c")
+    file(GLOB LAYER3_SRC  CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/layer3/src/*.c")
+    file(GLOB COMMON_SRC CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/common/src/*.c")
+else ()
+    file(GLOB ARCH_SRC    "${CMAKE_CURRENT_SOURCE_DIR}/arch/src/*.c")
+    file(GLOB LAYER1_SRC  "${CMAKE_CURRENT_SOURCE_DIR}/layer1/src/*.c")
+    file(GLOB LAYER2_SRC  "${CMAKE_CURRENT_SOURCE_DIR}/layer2/src/*.c")
+    file(GLOB LAYER3_SRC  "${CMAKE_CURRENT_SOURCE_DIR}/layer3/src/*.c")
+    file(GLOB COMMON_SRC  "${CMAKE_CURRENT_SOURCE_DIR}/common/src/*.c")
+endif ()
+
+
 # 主可执行文件
 add_executable(wlan_dev ${ARCH_SRC} ${LAYER1_SRC} ${LAYER2_SRC} ${LAYER3_SRC} ${COMMON_SRC})
 # 添加头文件搜索路径
@@ -25,4 +110,19 @@ target_include_directories(wlan_dev PRIVATE
     layer2/include
     layer3/include
 )
+
+# 打印配置信息
+message(STATUS "========================================")
+message(STATUS "Project: ${PROJECT_NAME} v${PROJECT_VERSION}")
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
+message(STATUS "C Compiler: ${CMAKE_C_COMPILER}")
+message(STATUS "C Standard: ${CMAKE_C_STANDARD}")
+message(STATUS "Build shared libs: ${BUILD_SHARED_LIBS}")
+message(STATUS "Install prefix: ${CMAKE_INSTALL_PREFIX}")
+message("ARCH_SRC = ${ARCH_SRC}")
+message("LAYER1_SRC = ${LAYER1_SRC}")
+message("LAYER2_SRC = ${LAYER2_SRC}")
+message("LAYER3_SRC = ${LAYER3_SRC}")
+message("COMMON_SRC = ${COMMON_SRC}")
+message(STATUS "========================================")
 
