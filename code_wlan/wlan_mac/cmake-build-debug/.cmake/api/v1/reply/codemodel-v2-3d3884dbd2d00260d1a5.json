@@ -1,0 +1,163 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "common",
+					"jsonFile" : "directory-common-Debug-df8a23303754f0cfc2e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "common",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "layer1",
+					"jsonFile" : "directory-layer1-Debug-504926fa9f6912a6dfdc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "layer1",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "layer2",
+					"jsonFile" : "directory-layer2-Debug-e0eb4d19d5a8c69c72ae.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "layer2",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "layer3",
+					"jsonFile" : "directory-layer3-Debug-a9f7a6b4c053dd63ce19.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "layer3",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "wlan_dev",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "common::@bfc844598bd03e848b3c",
+					"jsonFile" : "target-common-Debug-bbffa37f28d469333bb5.json",
+					"name" : "common",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "layer1::@bd629e893a8500482b70",
+					"jsonFile" : "target-layer1-Debug-3478e10381ea72604a69.json",
+					"name" : "layer1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "layer2::@dbe8eae46582c9942690",
+					"jsonFile" : "target-layer2-Debug-b8349910202885ae39ce.json",
+					"name" : "layer2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "layer3::@f236d54728264f2f87d9",
+					"jsonFile" : "target-layer3-Debug-e465094389620bcc97be.json",
+					"name" : "layer3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wlan_dev::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wlan_dev-Debug-4da29451cf04eb487589.json",
+					"name" : "wlan_dev",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/cmake-build-debug",
+		"source" : "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

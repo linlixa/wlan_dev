@@ -82,25 +82,18 @@ endif()
 
 # 设置输出目录
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-# 方法1：按模块收集
-set(isAutoCheckFileModfy OFF) #通过这个变量为ON可以让cmake每次编译的时候都会执行cmake，可以确保文件的增加和删除以及名字修改都被cmake发现。
-if (isAutoCheckFileModfy)
-    file(GLOB ARCH_SRC   CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/arch/src/*.c")
-    file(GLOB LAYER1_SRC CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/layer1/src/*.c")
-    file(GLOB LAYER2_SRC CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/layer2/src/*.c")
-    file(GLOB LAYER3_SRC  CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/layer3/src/*.c")
-    file(GLOB COMMON_SRC CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/common/src/*.c")
-else ()
-    file(GLOB ARCH_SRC    "${CMAKE_CURRENT_SOURCE_DIR}/arch/src/*.c")
-    file(GLOB LAYER1_SRC  "${CMAKE_CURRENT_SOURCE_DIR}/layer1/src/*.c")
-    file(GLOB LAYER2_SRC  "${CMAKE_CURRENT_SOURCE_DIR}/layer2/src/*.c")
-    file(GLOB LAYER3_SRC  "${CMAKE_CURRENT_SOURCE_DIR}/layer3/src/*.c")
-    file(GLOB COMMON_SRC  "${CMAKE_CURRENT_SOURCE_DIR}/common/src/*.c")
-endif ()
 
+# 添加子目录（每个模块有自己的CMakeLists.txt）
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/common)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/layer1)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/layer2)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/layer3)
+
+file(GLOB ARCH_SRC "${CMAKE_CURRENT_SOURCE_DIR}/arch/src/*.c")
 
 # 主可执行文件
-add_executable(wlan_dev ${ARCH_SRC} ${LAYER1_SRC} ${LAYER2_SRC} ${LAYER3_SRC} ${COMMON_SRC})
+add_executable(wlan_dev ${ARCH_SRC})
+
 # 添加头文件搜索路径
 target_include_directories(wlan_dev PRIVATE
     ../public_interfac/include
@@ -109,6 +102,15 @@ target_include_directories(wlan_dev PRIVATE
     layer1/include
     layer2/include
     layer3/include
+)
+
+# 链接模块库
+target_link_libraries(wlan_dev
+    common
+    layer1
+    layer2
+    layer3
+
 )
 
 # 打印配置信息

@@ -1,0 +1,18 @@
+# ninja log v6
+37	556	7895867649395479	build.ninja	cd966f834adc4d35
+37	556	7895867649356489	D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/cmake-build-debug/layer3/cmake_install.cmake	cd966f834adc4d35
+37	556	7895867649255490	D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/cmake-build-debug/cmake_install.cmake	cd966f834adc4d35
+70	202	7895865989171212	CMakeFiles/wlan_dev.dir/arch/src/main.c.obj	1a716f826031608e
+37	556	7895867649335647	D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/cmake-build-debug/layer2/cmake_install.cmake	cd966f834adc4d35
+215	376	7889834592771282	bin/wlan_dev.exe	9c1903388c765088
+37	556	7895867649296448	D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/cmake-build-debug/common/cmake_install.cmake	cd966f834adc4d35
+37	556	7895867649315548	D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/cmake-build-debug/layer1/cmake_install.cmake	cd966f834adc4d35
+34	243	7895857829486555	common/CMakeFiles/common.dir/src/log.c.obj	2900d2496e49210b
+82	455	7895859792072637	lib/libcommon.a	70cb78ab90ab7ec8
+41	166	7895865988881211	layer1/CMakeFiles/layer1.dir/src/layer1.c.obj	f6f71a709dabc079
+64	257	7895867689185803	layer2/CMakeFiles/layer2.dir/src/layer2.c.obj	cb3fe5d7ce969bdd
+76	282	7895867689295928	layer3/CMakeFiles/layer3.dir/src/layer3.c.obj	868701e4b2979ded
+89	337	7895867689425880	CMakeFiles/wlan_dev.dir/arch/src/main.c.obj	771ff0d35b897486
+97	380	7895867689508540	lib/liblayer1.a	74aa8ebb81fb874e
+258	557	7895867691125640	lib/liblayer2.a	7ee9038a3f1ac377
+282	560	7895867691361011	lib/liblayer3.a	aaf6f4f519e3ad3b
