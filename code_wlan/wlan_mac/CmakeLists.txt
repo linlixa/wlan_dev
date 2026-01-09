@@ -105,11 +105,11 @@ target_include_directories(wlan_dev PRIVATE
 )
 
 # 链接模块库
-target_link_libraries(wlan_dev
-    common
+target_link_libraries(wlan_dev    
     layer1
     layer2
     layer3
+	common
 
 )
 
