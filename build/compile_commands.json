@@ -1,0 +1,68 @@
+[
+{
+  "directory": "D:/wlan_prj/wlan_dev/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/wlan_dev.dir/includes_C.rsp -g -std=c17 -o CMakeFiles\\wlan_dev.dir\\arch\\src\\main.c.obj -c D:\\wlan_prj\\wlan_dev\\code_wlan\\wlan_mac\\arch\\src\\main.c",
+  "file": "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/arch/src/main.c",
+  "output": "CMakeFiles/wlan_dev.dir/arch/src/main.c.obj"
+},
+{
+  "directory": "D:/wlan_prj/wlan_dev/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/wlan_dev.dir/includes_C.rsp -g -std=c17 -o CMakeFiles\\wlan_dev.dir\\memory\\src\\memory.c.obj -c D:\\wlan_prj\\wlan_dev\\code_wlan\\wlan_mac\\memory\\src\\memory.c",
+  "file": "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/memory/src/memory.c",
+  "output": "CMakeFiles/wlan_dev.dir/memory/src/memory.c.obj"
+},
+{
+  "directory": "D:/wlan_prj/wlan_dev/build/common",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/common.dir/includes_C.rsp -g -std=c17 -o CMakeFiles\\common.dir\\src\\log.c.obj -c D:\\wlan_prj\\wlan_dev\\code_wlan\\wlan_mac\\common\\src\\log.c",
+  "file": "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/common/src/log.c",
+  "output": "common/CMakeFiles/common.dir/src/log.c.obj"
+},
+{
+  "directory": "D:/wlan_prj/wlan_dev/build/layer1",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/layer1.dir/includes_C.rsp -g -std=c17 -o CMakeFiles\\layer1.dir\\src\\layer1.c.obj -c D:\\wlan_prj\\wlan_dev\\code_wlan\\wlan_mac\\layer1\\src\\layer1.c",
+  "file": "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/layer1/src/layer1.c",
+  "output": "layer1/CMakeFiles/layer1.dir/src/layer1.c.obj"
+},
+{
+  "directory": "D:/wlan_prj/wlan_dev/build/layer2",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/layer2.dir/includes_C.rsp -g -std=c17 -o CMakeFiles\\layer2.dir\\src\\layer2.c.obj -c D:\\wlan_prj\\wlan_dev\\code_wlan\\wlan_mac\\layer2\\src\\layer2.c",
+  "file": "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/layer2/src/layer2.c",
+  "output": "layer2/CMakeFiles/layer2.dir/src/layer2.c.obj"
+},
+{
+  "directory": "D:/wlan_prj/wlan_dev/build/layer3",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/layer3.dir/includes_C.rsp -g -std=c17 -o CMakeFiles\\layer3.dir\\src\\layer3.c.obj -c D:\\wlan_prj\\wlan_dev\\code_wlan\\wlan_mac\\layer3\\src\\layer3.c",
+  "file": "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/layer3/src/layer3.c",
+  "output": "layer3/CMakeFiles/layer3.dir/src/layer3.c.obj"
+},
+{
+  "directory": "D:/wlan_prj/wlan_dev/build/extern-googletest/googlemock",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c D:\\wlan_prj\\wlan_dev\\extern\\googletest\\googlemock\\src\\gmock-all.cc",
+  "file": "D:/wlan_prj/wlan_dev/extern/googletest/googlemock/src/gmock-all.cc",
+  "output": "extern-googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
+},
+{
+  "directory": "D:/wlan_prj/wlan_dev/build/extern-googletest/googlemock",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c D:\\wlan_prj\\wlan_dev\\extern\\googletest\\googlemock\\src\\gmock_main.cc",
+  "file": "D:/wlan_prj/wlan_dev/extern/googletest/googlemock/src/gmock_main.cc",
+  "output": "extern-googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
+},
+{
+  "directory": "D:/wlan_prj/wlan_dev/build/extern-googletest/googletest",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c D:\\wlan_prj\\wlan_dev\\extern\\googletest\\googletest\\src\\gtest-all.cc",
+  "file": "D:/wlan_prj/wlan_dev/extern/googletest/googletest/src/gtest-all.cc",
+  "output": "extern-googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+},
+{
+  "directory": "D:/wlan_prj/wlan_dev/build/extern-googletest/googletest",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c D:\\wlan_prj\\wlan_dev\\extern\\googletest\\googletest\\src\\gtest_main.cc",
+  "file": "D:/wlan_prj/wlan_dev/extern/googletest/googletest/src/gtest_main.cc",
+  "output": "extern-googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+},
+{
+  "directory": "D:/wlan_prj/wlan_dev/build/test",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/test_layers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\test_layers.dir\\test_layers.cpp.obj -c D:\\wlan_prj\\wlan_dev\\code_wlan\\wlan_mac\\test\\test_layers.cpp",
+  "file": "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/test/test_layers.cpp",
+  "output": "test/CMakeFiles/test_layers.dir/test_layers.cpp.obj"
+}
+]

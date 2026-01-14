@@ -1,0 +1,5 @@
+if(EXISTS "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/build/test/test_layers[1]_tests.cmake")
+  include("D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/build/test/test_layers[1]_tests.cmake")
+else()
+  add_test(test_layers_NOT_BUILT test_layers_NOT_BUILT)
+endif()

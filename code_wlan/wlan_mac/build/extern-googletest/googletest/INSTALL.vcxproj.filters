@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\wlan_prj\wlan_dev\code_wlan\wlan_mac\build\CMakeFiles\70f5c20fb04d0576022eff085860823d\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DE61075A-55FC-313D-9A50-5B6BA1927922}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

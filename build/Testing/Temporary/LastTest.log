@@ -1,0 +1,107 @@
+Start testing: Jan 14 14:57 中国标准时间
+----------------------------------------------------------
+1/4 Testing: Layer1Test.HandlesNull
+1/4 Test: Layer1Test.HandlesNull
+Command: "D:/wlan_prj/wlan_dev/build/bin/test_layers.exe" "--gtest_filter=Layer1Test.HandlesNull" "--gtest_also_run_disabled_tests"
+Directory: D:/wlan_prj/wlan_dev/build/test
+"Layer1Test.HandlesNull" start time: Jan 14 14:57 中国标准时间
+Output:
+----------------------------------------------------------
+Note: Google Test filter = Layer1Test.HandlesNull
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Layer1Test
+[ RUN      ] Layer1Test.HandlesNull
+[       OK ] Layer1Test.HandlesNull (27 ms)
+[----------] 1 test from Layer1Test (27 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (28 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"Layer1Test.HandlesNull" end time: Jan 14 14:57 中国标准时间
+"Layer1Test.HandlesNull" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: Layer2Test.ULData
+2/4 Test: Layer2Test.ULData
+Command: "D:/wlan_prj/wlan_dev/build/bin/test_layers.exe" "--gtest_filter=Layer2Test.ULData" "--gtest_also_run_disabled_tests"
+Directory: D:/wlan_prj/wlan_dev/build/test
+"Layer2Test.ULData" start time: Jan 14 14:57 中国标准时间
+Output:
+----------------------------------------------------------
+Note: Google Test filter = Layer2Test.ULData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Layer2Test
+[ RUN      ] Layer2Test.ULData
+[       OK ] Layer2Test.ULData (25 ms)
+[----------] 1 test from Layer2Test (25 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (25 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"Layer2Test.ULData" end time: Jan 14 14:57 中国标准时间
+"Layer2Test.ULData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: Layer2Test.DLData
+3/4 Test: Layer2Test.DLData
+Command: "D:/wlan_prj/wlan_dev/build/bin/test_layers.exe" "--gtest_filter=Layer2Test.DLData" "--gtest_also_run_disabled_tests"
+Directory: D:/wlan_prj/wlan_dev/build/test
+"Layer2Test.DLData" start time: Jan 14 14:57 中国标准时间
+Output:
+----------------------------------------------------------
+Note: Google Test filter = Layer2Test.DLData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Layer2Test
+[ RUN      ] Layer2Test.DLData
+[       OK ] Layer2Test.DLData (27 ms)
+[----------] 1 test from Layer2Test (27 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (27 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"Layer2Test.DLData" end time: Jan 14 14:57 中国标准时间
+"Layer2Test.DLData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: Layer3Test.Basic
+4/4 Test: Layer3Test.Basic
+Command: "D:/wlan_prj/wlan_dev/build/bin/test_layers.exe" "--gtest_filter=Layer3Test.Basic" "--gtest_also_run_disabled_tests"
+Directory: D:/wlan_prj/wlan_dev/build/test
+"Layer3Test.Basic" start time: Jan 14 14:57 中国标准时间
+Output:
+----------------------------------------------------------
+Note: Google Test filter = Layer3Test.Basic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Layer3Test
+[ RUN      ] Layer3Test.Basic
+[       OK ] Layer3Test.Basic (26 ms)
+[----------] 1 test from Layer3Test (26 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"Layer3Test.Basic" end time: Jan 14 14:57 中国标准时间
+"Layer3Test.Basic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 14 14:57 中国标准时间

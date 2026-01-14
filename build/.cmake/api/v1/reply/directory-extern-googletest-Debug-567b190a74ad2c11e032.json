@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "extern-googletest",
+		"source" : "D:/wlan_prj/wlan_dev/extern/googletest"
+	}
+}

@@ -89,14 +89,24 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/layer1)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/layer2)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/layer3)
 
+# Tests (googletest)
+if(BUILD_TESTS)
+    enable_testing()
+    # extern is located two levels up from this module (wlan_dev/extern)
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../extern/googletest extern-googletest)
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/test)
+endif()
+
 file(GLOB ARCH_SRC "${CMAKE_CURRENT_SOURCE_DIR}/arch/src/*.c")
+file(GLOB MEMORY_SRC "${CMAKE_CURRENT_SOURCE_DIR}/memory/src/*.c")
 
 # 主可执行文件
-add_executable(wlan_dev ${ARCH_SRC})
+add_executable(wlan_dev ${ARCH_SRC} ${MEMORY_SRC})
 
 # 添加头文件搜索路径
 target_include_directories(wlan_dev PRIVATE
     ../public_interfac/include
+    memory/include
     arch/include
     common/include
     layer1/include

@@ -5,8 +5,7 @@ typedef struct phy_msg_tag
 {
     unsigned short msgtype;
     unsigned short msgid;
-
-}phy_msg;
+}phy_msg_head;
 
 
 #endif
