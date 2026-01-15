@@ -1,6 +1,0 @@
-wlan_mac_test_layers2_NOT_BUILT 0 0
-Layer1Test.HandlesNull 2 0.0119064
-Layer2Test.ULData 2 0.0124816
-Layer2Test.DLData 2 0.0117152
-Layer3Test.Basic 2 0.0121942
----
