@@ -1,5 +1,0 @@
-if(EXISTS "D:/wlan_prj/wlan_dev/build/test/test_layers[4]_tests.cmake")
-  include("D:/wlan_prj/wlan_dev/build/test/test_layers[4]_tests.cmake")
-else()
-  add_test(test_layers_NOT_BUILT test_layers_NOT_BUILT)
-endif()
