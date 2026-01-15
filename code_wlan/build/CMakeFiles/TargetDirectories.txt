@@ -1,3 +1,0 @@
-D:/wlan_dev/code_wlan/build/CMakeFiles/wlan_dev.dir
-D:/wlan_dev/code_wlan/build/CMakeFiles/edit_cache.dir
-D:/wlan_dev/code_wlan/build/CMakeFiles/rebuild_cache.dir

@@ -60,9 +60,9 @@
   "output": "extern-googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
 },
 {
-  "directory": "D:/wlan_prj/wlan_dev/build/test",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/test_layers.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\test_layers.dir\\test_layers.cpp.obj -c D:\\wlan_prj\\wlan_dev\\code_wlan\\wlan_mac\\test\\test_layers.cpp",
+  "directory": "D:/wlan_prj/wlan_dev/build/test2",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/wlan_mac_test_layers2.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\wlan_mac_test_layers2.dir\\__\\test\\test_layers.cpp.obj -c D:\\wlan_prj\\wlan_dev\\code_wlan\\wlan_mac\\test\\test_layers.cpp",
   "file": "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/test/test_layers.cpp",
-  "output": "test/CMakeFiles/test_layers.dir/test_layers.cpp.obj"
+  "output": "test2/CMakeFiles/wlan_mac_test_layers2.dir/__/test/test_layers.cpp.obj"
 }
 ]

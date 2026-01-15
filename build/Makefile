@@ -288,17 +288,17 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named test_layers
+# Target rules for targets named wlan_mac_test_layers2
 
 # Build rule for target.
-test_layers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_layers
-.PHONY : test_layers
+wlan_mac_test_layers2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 wlan_mac_test_layers2
+.PHONY : wlan_mac_test_layers2
 
 # fast build rule for target.
-test_layers/fast:
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\test_layers.dir\build.make test/CMakeFiles/test_layers.dir/build
-.PHONY : test_layers/fast
+wlan_mac_test_layers2/fast:
+	$(MAKE) $(MAKESILENT) -f test2\CMakeFiles\wlan_mac_test_layers2.dir\build.make test2/CMakeFiles/wlan_mac_test_layers2.dir/build
+.PHONY : wlan_mac_test_layers2/fast
 
 arch/src/main.obj: arch/src/main.c.obj
 .PHONY : arch/src/main.obj
@@ -369,8 +369,8 @@ help:
 	@echo ... layer1
 	@echo ... layer2
 	@echo ... layer3
-	@echo ... test_layers
 	@echo ... wlan_dev
+	@echo ... wlan_mac_test_layers2
 	@echo ... arch/src/main.obj
 	@echo ... arch/src/main.i
 	@echo ... arch/src/main.s

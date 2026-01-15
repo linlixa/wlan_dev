@@ -44,7 +44,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/layer1/CMakeLists.txt"
   "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/layer2/CMakeLists.txt"
   "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/layer3/CMakeLists.txt"
-  "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/test/CMakeLists.txt"
+  "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/test2/CMakeLists.txt"
   "D:/wlan_prj/wlan_dev/extern/googletest/CMakeLists.txt"
   "D:/wlan_prj/wlan_dev/extern/googletest/googlemock/CMakeLists.txt"
   "D:/wlan_prj/wlan_dev/extern/googletest/googlemock/cmake/gmock.pc.in"
@@ -78,7 +78,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "extern-googletest/googletest/generated/gtest.pc"
   "extern-googletest/googletest/generated/gtest_main.pc"
   "extern-googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test2/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -92,5 +92,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "extern-googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "extern-googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "extern-googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "test/CMakeFiles/test_layers.dir/DependInfo.cmake"
+  "test2/CMakeFiles/wlan_mac_test_layers2.dir/DependInfo.cmake"
   )

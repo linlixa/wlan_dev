@@ -389,6 +389,15 @@ wlan_dev_IS_TOP_LEVEL:STATIC=ON
 wlan_dev_SOURCE_DIR:STATIC=D:/wlan_prj/wlan_dev/code_wlan/wlan_mac
 
 //Value Computed by CMake
+wlan_tests2_BINARY_DIR:STATIC=D:/wlan_prj/wlan_dev/build/test2
+
+//Value Computed by CMake
+wlan_tests2_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+wlan_tests2_SOURCE_DIR:STATIC=D:/wlan_prj/wlan_dev/code_wlan/wlan_mac/test2
+
+//Value Computed by CMake
 wlan_tests_BINARY_DIR:STATIC=D:/wlan_prj/wlan_dev/build/test
 
 //Value Computed by CMake

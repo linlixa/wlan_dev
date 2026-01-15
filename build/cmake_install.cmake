@@ -64,7 +64,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/wlan_prj/wlan_dev/build/test/cmake_install.cmake")
+  include("D:/wlan_prj/wlan_dev/build/test2/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

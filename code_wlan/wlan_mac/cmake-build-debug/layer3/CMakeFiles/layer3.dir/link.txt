@@ -1,2 +1,0 @@
-C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\ar.exe qc ..\lib\liblayer3.a CMakeFiles/layer3.dir/src/layer3.c.obj
-C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\ranlib.exe ..\lib\liblayer3.a

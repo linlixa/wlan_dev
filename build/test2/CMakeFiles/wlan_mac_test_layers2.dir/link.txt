@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\wlan_mac_test_layers2.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\wlan_mac_test_layers2.dir/objects.a @CMakeFiles\wlan_mac_test_layers2.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\wlan_mac_test_layers2.dir/objects.a -Wl,--no-whole-archive -o ..\bin\wlan_mac_test_layers2.exe -Wl,--out-implib,..\lib\libwlan_mac_test_layers2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\wlan_mac_test_layers2.dir\linkLibs.rsp

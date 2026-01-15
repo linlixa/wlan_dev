@@ -1,4 +1,4 @@
-#include <gtest/gtest.h>
+﻿#include <gtest/gtest.h>
 #include <string>
 
 #ifdef __cplusplus
@@ -19,7 +19,6 @@ TEST(Layer1Test, HandlesNull) {
     testing::internal::CaptureStdout();
     layer1_proc(nullptr);
     string output = testing::internal::GetCapturedStdout();
-    // Should at least print start message
     ASSERT_NE(output.find("start layer1 proc"), string::npos);
 }
 
