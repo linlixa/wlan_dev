@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc ..\lib\libcommon.a CMakeFiles/common.dir/src/log.c.obj
+C:\mingw64\bin\ranlib.exe ..\lib\libcommon.a

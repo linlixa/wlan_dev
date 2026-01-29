@@ -1,0 +1,329 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "common",
+					"jsonFile" : "directory-common-Debug-df8a23303754f0cfc2e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "common",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "layer1",
+					"jsonFile" : "directory-layer1-Debug-504926fa9f6912a6dfdc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "layer1",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "layer2",
+					"jsonFile" : "directory-layer2-Debug-e0eb4d19d5a8c69c72ae.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "layer2",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "layer3",
+					"jsonFile" : "directory-layer3-Debug-a9f7a6b4c053dd63ce19.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "layer3",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "extern-googletest",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-extern-googletest-Debug-567b190a74ad2c11e032.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "D:/wlan_prj/wlan_dev/extern/googletest"
+				},
+				{
+					"build" : "extern-googletest/googlemock",
+					"childIndexes" : 
+					[
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-extern-googletest.googlemock-Debug-1449198d702b16b27162.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "D:/wlan_prj/wlan_dev/extern/googletest/googlemock",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"build" : "extern-googletest/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-extern-googletest.googletest-Debug-58568b58ba7007c1402a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 3,
+					"source" : "D:/wlan_prj/wlan_dev/extern/googletest/googletest",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-Debug-f18be1977b403cfd1a50.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "wlan_dev",
+					"targetIndexes" : 
+					[
+						0,
+						5,
+						6,
+						7,
+						9
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "gmock",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "gtest",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "wlan_tests",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "common::@bfc844598bd03e848b3c",
+					"jsonFile" : "target-common-Debug-944168eaa8ffb995f14e.json",
+					"name" : "common",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gmock::@861ee7fc4ec6379fdcec",
+					"jsonFile" : "target-gmock-Debug-90cc0a5f1bdf4b984d3b.json",
+					"name" : "gmock",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "gmock_main::@861ee7fc4ec6379fdcec",
+					"jsonFile" : "target-gmock_main-Debug-dfdbe0bd7ce2a1e9b5ed.json",
+					"name" : "gmock_main",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gtest::@bb37e8e51b8700753495",
+					"jsonFile" : "target-gtest-Debug-78851fc8ae796f7c5b4c.json",
+					"name" : "gtest",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gtest_main::@bb37e8e51b8700753495",
+					"jsonFile" : "target-gtest_main-Debug-8a1b66508d8a39997d74.json",
+					"name" : "gtest_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "layer1::@bd629e893a8500482b70",
+					"jsonFile" : "target-layer1-Debug-9b74e49c8910bd80f005.json",
+					"name" : "layer1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "layer2::@dbe8eae46582c9942690",
+					"jsonFile" : "target-layer2-Debug-734fbcf6d4a3102685a9.json",
+					"name" : "layer2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "layer3::@f236d54728264f2f87d9",
+					"jsonFile" : "target-layer3-Debug-b5ef7e976706f745f9e7.json",
+					"name" : "layer3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "test_layers::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test_layers-Debug-9c86b8d84d84dafa127c.json",
+					"name" : "test_layers",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wlan_dev::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wlan_dev-Debug-5361253439c11b1399ed.json",
+					"name" : "wlan_dev",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/wlan_prj/wlan_dev/build",
+		"source" : "D:/wlan_prj/wlan_dev/code_wlan/wlan_mac"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

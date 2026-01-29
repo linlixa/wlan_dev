@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc ..\lib\liblayer1.a CMakeFiles/layer1.dir/src/layer1.c.obj
+C:\mingw64\bin\ranlib.exe ..\lib\liblayer1.a
