@@ -1,0 +1,36 @@
+CMakeFiles/wlan_dev.dir/arch/src/main.c.o: \
+ /home/linli/myprj/wlan_dev/code_wlan/wlan_mac/arch/src/main.c \
+ /usr/include/stdc-predef.h \
+ /home/linli/myprj/wlan_dev/code_wlan/wlan_mac/arch/src/../include/arch.h \
+ /home/linli/myprj/wlan_dev/code_wlan/wlan_mac/arch/src/../../layer1/include/layer1.h \
+ /usr/include/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/timesize.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/long-double.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h \
+ /home/linli/myprj/wlan_dev/code_wlan/wlan_mac/common/include/typedef.h \
+ /home/linli/myprj/wlan_dev/code_wlan/wlan_mac/../public_interfac/include/phy_to_mac_interface.h \
+ /home/linli/myprj/wlan_dev/code_wlan/wlan_mac/arch/src/../../layer2/include/layer2.h \
+ /home/linli/myprj/wlan_dev/code_wlan/wlan_mac/arch/src/../../layer2/include/../../common/include/typedef.h \
+ /home/linli/myprj/wlan_dev/code_wlan/wlan_mac/arch/src/../../layer3/include/layer3.h

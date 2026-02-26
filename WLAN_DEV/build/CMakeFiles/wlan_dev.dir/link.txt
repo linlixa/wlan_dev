@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/wlan_dev.dir/arch/src/main.c.o CMakeFiles/wlan_dev.dir/layer1/src/layer1.c.o CMakeFiles/wlan_dev.dir/layer2/src/layer2.c.o CMakeFiles/wlan_dev.dir/layer3/src/layer3.c.o CMakeFiles/wlan_dev.dir/common/src/log.c.o -o bin/wlan_dev 

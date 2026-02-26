@@ -1,0 +1,9 @@
+{
+    "cmake.sourceDirectory": "/home/linli/myprj/wlan_dev/code_wlan/wlan_mac",
+    "cmake.generator": "Unix Makefiles",
+    "cmake.preferredGenerators": [
+        "Unix Makefiles"
+    ],
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": false
+}
